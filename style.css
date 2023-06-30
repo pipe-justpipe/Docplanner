@@ -367,7 +367,7 @@ nav .selected {
 }
 
 .card-divs:hover {
-  box-shadow: 3px 3px 5px #9d9ca0;
+  box-shadow: 3px 3px 5px 5px #9d9ca0;
 }
 
 .caption {
@@ -556,6 +556,9 @@ footer p a:hover {
   .section-five {
     flex-direction: column;
     align-items: center;
+  }
+  .first-container{
+    order: 1;
   }
 
   .paragraph {
