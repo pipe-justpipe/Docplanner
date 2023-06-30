@@ -227,9 +227,6 @@ nav .selected {
   margin: 40px auto;
   width: 55%;
 }
-.card-display:hover{
-  flex-direction: row-reverse;
-}
 
 /* Section Four */
 .four {
@@ -252,6 +249,10 @@ nav .selected {
   grid-gap: 50px;
   width: 50%;
   padding: 10px;
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
 }
 
 .country-logos {
@@ -306,10 +307,6 @@ nav .selected {
 .card-img {
   margin-left: auto;
   margin-right: auto;
-}
-
-.none {
-  margin-bottom: 0;
 }
 
 .card1 {
@@ -491,6 +488,22 @@ footer p a:hover {
     width: 100%;
     justify-content: center;
   }
+  
+  
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  .image-container {
+    grid-template-columns: auto auto;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-container {
+    grid-template-columns: auto;
+    width: 90%;
+  }
+}
 
   .section-six {
     grid-template-columns: repeat(2, 1fr);
@@ -525,7 +538,7 @@ footer p a:hover {
 
   .card {
     width: 100%;
-    margin-right: 0;
+    margin-right: 20px;
     margin-bottom: 20px;
   }
 
@@ -536,5 +549,40 @@ footer p a:hover {
   .containerz {
     margin-left: 20px;
     margin-right: 20px;
+  }
+}
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .section-five {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .paragraph {
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .paragraph2 {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .cropped {
+    margin-top: 60px;
+    width: 50%;
+    height: auto;
+  }
+
+  .card {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
 }
